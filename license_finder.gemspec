@@ -71,5 +71,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rack-test', '> 0.7', '~> 2.1.0'
 
   s.files         = `git ls-files`.split("\n").reject { |f| f.start_with?('spec', 'features') }
-  s.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
 end
